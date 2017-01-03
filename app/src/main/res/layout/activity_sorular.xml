@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sorular"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/soru"
+    tools:context="com.example.mohammad.tahminoyunu.SorularActivity">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/soru"
+        android:textSize="18sp"
+        android:text="TextView"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/yukari"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:background="@drawable/down"
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        android:id="@+id/asagi"
+        android:layout_marginEnd="21dp"
+        android:layout_alignTop="@+id/yukari"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:background="@drawable/zaman"
+        android:id="@+id/zaman"
+        android:textSize="20dp"
+        android:text=""
+        android:textStyle="normal|bold"
+        android:layout_alignTop="@+id/resim"
+        android:layout_alignStart="@+id/soru"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/puan"
+        android:text="puanınız : 0"
+        android:layout_alignTop="@+id/resim"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/resim"
+        android:layout_marginBottom="27dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_above="@+id/soru"
+        android:layout_toStartOf="@+id/asagi" />
+
+    <Button
+        android:background="@drawable/up"
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        android:id="@+id/yukari"
+        android:layout_marginBottom="21dp"
+        android:layout_above="@+id/pas"
+        android:layout_toStartOf="@+id/resim" />
+
+    <Button
+        android:background="@drawable/pas"
+        android:layout_width="80dp"
+        android:id="@+id/pas"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:layout_height="80dp" />
+</RelativeLayout>
