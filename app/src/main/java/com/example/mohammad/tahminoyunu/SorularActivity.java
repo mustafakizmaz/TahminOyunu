@@ -84,7 +84,7 @@ public class SorularActivity extends AppCompatActivity {
         //Geri Sayım
         new CountDownTimer(60000,1000) {
             public void onTick(long millisUntilFinished) {
-                zaman.setText(" " + millisUntilFinished/1000);
+                zaman.setText("\n   "+ millisUntilFinished/1000);
                 sn--;
                 // soru
                 soru.setText(" "+sorular[soruKontrol]);

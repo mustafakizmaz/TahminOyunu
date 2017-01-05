@@ -39,7 +39,7 @@
         android:layout_alignTop="@+id/resim"
         android:layout_alignStart="@+id/soru"
         android:layout_width="50dp"
-        android:layout_height="50dp" />
+        android:layout_height="70dp" />
 
     <TextView
         android:layout_height="wrap_content"
